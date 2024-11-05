@@ -32,7 +32,7 @@
     }
     
     h2 {
-      color: black;
+      color: #FFFDF7;
       font-family: 'League Gothic', sans-serif;
       font-size: 120px; 
       margin: 0; 
@@ -42,7 +42,6 @@
       color: black;
       font-family: 'Noto Sans', sans-serif; 
     }
-    
     
     #onLeftSide, #onRightSide {
       display: flex;
@@ -56,6 +55,23 @@
     
     #onRightSide {
       width: 40%;
+      position: relative; 
+      padding: 20px;
+    }
+    
+    #blackRect {
+      width: 500px;
+      height: 600px;
+      background-color: black;
+      position: absolute;
+      left: 0;
+      top: 60;
+      z-index: 0; 
+    }
+
+    #onRightSide h2, #onRightSide h1, #onRightSide p {
+      z-index: 1; /* Ensures text is above the rectangle */
+      position: relative;
     }
   
   </style>
@@ -69,9 +85,11 @@
   </div>
 
   <div id="onRightSide">
+    <div id="blackRect"></div> <!-- Rectangle positioned behind the text -->
     <h2 style="font-size:75px">I'M</h2>
     <h2>JENNY</h2>
-    <h2>SOUTH</h2> <h2 style="font-size:65px">JRSOUTH@UWATERLOO.CA</h2>
+    <h2>SOUTH</h2>
+    <h2 style="font-size:65px">JRSOUTH@UWATERLOO.CA</h2>
   </div>
 
 </body>
