@@ -2,6 +2,7 @@
 <html lang="en-CAN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jenny South Portfolio</title>
   
   <!--Header -->
@@ -15,27 +16,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <style>
+    * {
+      box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
+    }
+    
     body {
       background-color: #FFFDF7; 
-      margin: 0;  
+      margin: 0;
       width: 100%; 
-      height: 100%; 
+      height: 100vh;
       display: flex;
       padding: 20px;
+
     }
     
     h1 {
       color: black;
       font-size: 300px; 
       font-family: 'League Gothic', sans-serif; 
-      margin: 0; 
+      margin: 0;
+      line-height: 1; 
     }
     
     h2 {
       color: #FFFDF7;
       font-family: 'League Gothic', sans-serif;
       font-size: 120px; 
-      margin: 0; 
+      margin: 0;
+      line-height: 1; 
     }
     
     p {
@@ -44,15 +52,20 @@
     }
     
     #onLeftSide {
-      width: 50%; 
-      display: block;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: flex-start;
     }
     
     #onRightSide {
-      width: 55%;
+      width: 50%;
       position: relative; 
       padding: 20px;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
     
     #blackRect {
@@ -60,45 +73,42 @@
       height: 600px;
       background-color: black;
       position: absolute;
-      left: 0;
-      margin-left: 60; 
-      top: 60;
-      z-index: 0; 
-      display: block;
+      left: 60px;
+      top: 60px;
+      z-index: 0;
     }
     
-    #blackline{
-      width: 450;
+    #blackline {
+      width: 450px;
       height: 5px;
       background-color: black;
       position: absolute;
-      left: 20;
+      left: 20px;
       top: 700px;
-      display: block;
     }
     
-    #whiteline{
-      width: 500;
+    #whiteline {
+      width: 500px;
       height: 5px;
       background-color: #FFFDF7;
       position: absolute;
-      left: 80;
+      left: 80px;
       top: 90px;
-      display: block;
     }
 
     #onRightSide h2, #onRightSide h1, #onRightSide p {
-      z-index: 1; 
+      z-index: 1;
       position: relative;
     }
     
-    .whitetext{
+    .whitetext {
       margin-top: 80px;
-      margin-left: 60px
+      margin-left: 65px;
     }
     
-    .blacktext{
-      margin-left: 250px; 
+    .blacktext {
+      margin-left: 200px; 
+      margin-top: 30px; 
     }
   
   </style>
@@ -107,10 +117,10 @@
   
   <div id="onLeftSide">
     <div class="blacktext">
-    <h1> PORT </h1>
-    <h1> FOLIO </h1>
-    <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
-      </div>
+      <h1> PORT </h1>
+      <h1> FOLIO </h1>
+      <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
+    </div>
     <div id="blackline"></div>
   </div>
 
@@ -118,14 +128,11 @@
     <div id="blackRect"></div> <!-- Rectangle positioned behind the text -->
     <div id="whiteline"></div>
     <div class="whitetext">
-    <h2 style="font-size:75px">I'M</h2>
-    <h2>JENNY</h2>
-    <h2>SOUTH</h2>
-    <h2 style="font-size:50px">JRSOUTH@UWATERLOO.CA</h2>
-      </div>
+      <h2 style="font-size:75px">I'M</h2>
+      <h2>JENNY</h2>
+      <h2>SOUTH</h2>
+      <h2 style="font-size:50px">JRSOUTH@UWATERLOO.CA</h2>
+    </div>
   </div>
 </body>
 </html>
-
-
-
