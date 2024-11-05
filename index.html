@@ -5,61 +5,78 @@
   <title>Jenny South Portfolio</title>
   
   <!--Header -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-  
-  <!--body font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  
+  <!--Body font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <style>
-    body{
+    body {
       background-color: #FFFDF7; 
       margin: 0; 
       padding: 0; 
       width: 100%; 
       height: 100%; 
-      display: block;  
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Spaces items left and right */
+      flex-wrap: wrap; /* Allows items to wrap if needed */
+      padding: 20px;
     }
     
-    h1{
+    h1 {
       color: black;
-      font-size: 30.00em; 
+      font-size: 300px; 
       font-family: 'League Gothic', sans-serif; 
       margin: 0; 
     }
     
-    p{
+    h2 {
       color: black;
-      font-family: 'Noto Sans'; 
+      font-family: 'League Gothic', sans-serif;
+      font-size: 100px; 
+      margin: 0; 
     }
     
-    #onLeftSide{
-      float: left; 
+    p {
+      color: black;
+      font-family: 'Noto Sans', sans-serif; 
+    }
+    
+    #onLeftSide, #onRightSide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    #onLeftSide {
       width: 50%; 
-      margin-left: 20px; 
-      margin-top: 100px; 
+    }
+    
+    #onRightSide {
+      width: 40%;
     }
   
   </style>
 </head>
 <body>
   
-
-<div id="onLeftSide">
-  <h1> PORT </h1>
-  <h1> FOLIO </h1>
-  
-<p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
+  <div id="onLeftSide">
+    <h1> PORT </h1>
+    <h1> FOLIO </h1>
+    <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
   </div>
-  
 
-  </body>
+  <div id="onRightSide">
+    <h2>I'M</h2>
+    <h2>JENNY</h2>
+    <h2>SOUTH</h2>
+    <h2>JRSOUTH@UWATERLOO.CA</h2>
+  </div>
+
+</body>
 </html>
-
-
-
-
-
