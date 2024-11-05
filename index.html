@@ -54,13 +54,13 @@
     }
     
     #onRightSide {
-      width: 40%;
+      width: 55%;
       position: relative; 
       padding: 20px;
     }
     
     #blackRect {
-      width: 500px;
+      width: 550px;
       height: 600px;
       background-color: black;
       position: absolute;
@@ -68,9 +68,27 @@
       top: 60;
       z-index: 0; 
     }
+    
+    #blackline{
+      width: 450;
+      height: 5px;
+      background-color: black;
+      position: absolute;
+      left: 20;
+      top: 700px;
+    }
+    
+    #whiteline{
+      width: 500;
+      height: 5px;
+      background-color: #FFFDF7;
+      position: absolute;
+      left: 25;
+      top: 90px;
+    }
 
     #onRightSide h2, #onRightSide h1, #onRightSide p {
-      z-index: 1; /* Ensures text is above the rectangle */
+      z-index: 1; 
       position: relative;
     }
   
@@ -82,14 +100,16 @@
     <h1> PORT </h1>
     <h1> FOLIO </h1>
     <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
+    <div id="blackline"></div>
   </div>
 
   <div id="onRightSide">
     <div id="blackRect"></div> <!-- Rectangle positioned behind the text -->
+    <div id="whiteline"></div>
     <h2 style="font-size:75px">I'M</h2>
     <h2>JENNY</h2>
     <h2>SOUTH</h2>
-    <h2 style="font-size:65px">JRSOUTH@UWATERLOO.CA</h2>
+    <h2 style="font-size:50px">JRSOUTH@UWATERLOO.CA</h2>
   </div>
 
 </body>
