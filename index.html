@@ -43,31 +43,28 @@
       font-family: 'Noto Sans', sans-serif; 
     }
     
-    #onLeftSide, #onRightSide {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
     #onLeftSide {
       width: 50%; 
-      margin-left: 275px;
+      display: block;
     }
     
     #onRightSide {
       width: 55%;
       position: relative; 
       padding: 20px;
+      display: block;
     }
     
     #blackRect {
-      width: 650px;
+      width: 550px;
       height: 600px;
       background-color: black;
       position: absolute;
-      right: 50;
+      left: 0;
+      margin-left: 60; 
       top: 60;
       z-index: 0; 
+      display: block;
     }
     
     #blackline{
@@ -77,6 +74,7 @@
       position: absolute;
       left: 20;
       top: 700px;
+      display: block;
     }
     
     #whiteline{
@@ -84,13 +82,23 @@
       height: 5px;
       background-color: #FFFDF7;
       position: absolute;
-      left: 25;
+      left: 80;
       top: 90px;
+      display: block;
     }
 
     #onRightSide h2, #onRightSide h1, #onRightSide p {
       z-index: 1; 
       position: relative;
+    }
+    
+    .whitetext{
+      margin-top: 80px;
+      margin-left: 60px
+    }
+    
+    .blacktext{
+      margin-left: 250px; 
     }
   
   </style>
@@ -98,21 +106,24 @@
 <body>
   
   <div id="onLeftSide">
+    <div class="blacktext">
     <h1> PORT </h1>
     <h1> FOLIO </h1>
     <p> STUDENT DESIGNER INTERESTED IN UX/UI DESIGN, WEB DESIGN, AND MARKETING.</p>
+      </div>
     <div id="blackline"></div>
   </div>
 
   <div id="onRightSide">
     <div id="blackRect"></div> <!-- Rectangle positioned behind the text -->
     <div id="whiteline"></div>
+    <div class="whitetext">
     <h2 style="font-size:75px">I'M</h2>
     <h2>JENNY</h2>
     <h2>SOUTH</h2>
     <h2 style="font-size:50px">JRSOUTH@UWATERLOO.CA</h2>
+      </div>
   </div>
-
 </body>
 </html>
 
