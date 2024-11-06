@@ -121,14 +121,35 @@
     }
     
      .navbar {
-            width: 940px; 
-            height: 20px;
-            margin: 20px auto; 
-        }
-    
-    
+    width: 940px;
+    margin-left: -1000px; 
+    position: relative;    
+}
 
-  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+nav li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:active {
+    color: #808080; 
+}
+
   </style>
 </head>
 <body>
@@ -153,6 +174,18 @@
       <h2 style="font-size:45px">JRSOUTH@UWATERLOO.CA</h2>
     </div>
   </div>
+  
+  <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">ILLUSTRATOR</a></li>
+            <li><a href="/">PHOTOSHOP</a></li>
+            <li><a href="/">OTHER PROJECTS</a></li>
+        </ul>
+    </nav>
+</div>
+
 </body>
 </html>
 
