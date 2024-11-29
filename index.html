@@ -66,8 +66,8 @@
     }
 
     #blackRect {
-      width: 550px;
-      height: 580px;
+      width: 34.38em; 
+      height: 36.25em; 
       background-color: black;
       position: absolute;
       left: 60px;
@@ -114,7 +114,7 @@
       z-index: 1;
       top: 175px;
       left: 209px;
-      width: 400px;
+      width: 25.00em;
       opacity: 0.8;
     }
 
@@ -160,6 +160,52 @@
     nav a:hover,
     nav a:active {
       color: #808080;
+    }
+
+    @media screen and (max-width: 1200px) {
+      h1 {
+        font-size: 200px;
+      }
+
+      #blackRect {
+        width: 80%; 
+        height: 80%; 
+      }
+      
+    }
+
+    @media screen and (max-width: 900px) {
+      h1 {
+        font-size: 150px;
+        margin-right: 500px;
+      }
+
+      #blackRect {
+        width: 50%; 
+        height: 50%;  
+      }
+      
+      h2 {
+        font-size: 100px;
+        margin-right: 500px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 100px;
+        margin-right: 500px;
+      }
+
+      h2 {
+        font-size: 75px;
+        margin-right: 500px;
+      }
+
+      #blackRect {
+        width: 60%;  /* Adjust width for very small screens */
+        height: 25vh;  /* Adjust height for very small screens */
+      }
     }
   </style>
 </head>
